@@ -36,3 +36,5 @@ build/
 
 # Others
 .clang-format
+.cache/
+.vscode/
