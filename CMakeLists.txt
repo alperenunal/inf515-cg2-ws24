@@ -1,5 +1,5 @@
 # Projects Settings
-cmake_minimum_required (VERSION 3.1)
+cmake_minimum_required (VERSION 3.5)
 project (INF515-Computergrafik_II)
 
 add_definitions(-DGLEW_STATIC)
