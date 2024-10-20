@@ -1,5 +1,5 @@
 # Projects Settings
-cmake_minimum_required (VERSION 3.1)
+cmake_minimum_required (VERSION 3.5)
 # The main executable
 add_executable(Task06-Uniform
   uniform.cc
