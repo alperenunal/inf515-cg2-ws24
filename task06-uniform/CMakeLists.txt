@@ -14,3 +14,6 @@ Task06-Uniform
   PRIVATE glfw
   PRIVATE libglew_static
 )
+
+file(COPY vertex_shader.vs DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+file(COPY fragment_shader.fs DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
