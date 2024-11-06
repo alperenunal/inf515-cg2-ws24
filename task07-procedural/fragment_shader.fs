@@ -67,7 +67,15 @@ void renderPattern1() {
 
 // ---
 void renderPattern2() {
-  frag_color = clr0;
+  vec2 uv = gl_FragCoord.xy;
+  float freq = 0.05;
+  float pos = uv.x * freq;
+  float pattern = mod(floor(pos), 2.0);
+
+  vec3 color1 = vec3(0.0, 0.8, 0.9);
+  vec3 color2 = vec3(0.7, 0.8, 0.5);
+  vec3 color = mix(color1, color2, pattern);
+  frag_color = vec4(color, 1.0);
 }
 
 void
