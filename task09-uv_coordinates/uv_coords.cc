@@ -300,6 +300,7 @@ void renderLoop(Settings &setup) {
     unsigned int texture_id = 0;
     loadTexture("texture.jpg", &texture_id);
     // ToDo step 11: activate texture unit 0 and bind texture
+    glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, texture_id);
 
     // --- render loop
