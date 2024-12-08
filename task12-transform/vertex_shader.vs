@@ -9,6 +9,6 @@ out vec2 v_tex_coord;
 
 void main() {
   // ToDo step 2: change shader to perform transformation
-  gl_Position = vec4(a_pos, 1.0);
+  gl_Position = transform * vec4(a_pos, 1.0);
   v_tex_coord = vec2(a_tex_coord.x, a_tex_coord.y);
 }
